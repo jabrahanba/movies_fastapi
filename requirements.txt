@@ -93,6 +93,5 @@ wcwidth==0.2.5
 websocket-client==1.2.3
 wsproto==1.0.0
 xdg==5
-xkit==0.0.0
 xonsh==0.11.0
 
