@@ -60,7 +60,6 @@ pycparser==2.21
 pycups==2.0.1
 pydantic==1.10.9
 Pygments==2.11.2
-PyGObject==3.42.1
 PyJWT==2.3.0
 pymacaroons==0.13.0
 pymongo==4.4.0
