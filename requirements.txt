@@ -86,7 +86,6 @@ Sphinx==4.3.2
 starlette==0.27.0
 texttable==1.6.4
 typing_extensions==4.6.3
-ufw==0.36.1
 unattended-upgrades==0.1
 urllib3==1.26.5
 usb-creator==0.3.7
