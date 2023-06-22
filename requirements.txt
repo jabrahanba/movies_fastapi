@@ -93,5 +93,5 @@ websocket-client==1.2.3
 wsproto==1.0.0
 xdg==5
 xonsh==0.11.0
-libgirepository1.0-dev
+
 
