@@ -38,16 +38,15 @@ def index(mes: str):
 
     nombre_mes = mes.lower()
     if nombre_mes not in meses:
-        print("Nombre de mes inválido.")
-    else:
-        numero_mes = meses[nombre_mes]
-        mes_formateado = str(numero_mes).zfill(2)
-        query = {
-            "release_date": {
-                "$regex": fr"-{mes_formateado}-[0-9]{{2}}"
-            }
+        return {"error": "Nombre de mes inválido."}
+
+    numero_mes = meses[nombre_mes]
+    mes_formateado = str(numero_mes).zfill(2)
+    query = {
+        "release_date": {
+            "$regex": fr"-{mes_formateado}-[0-9]{{2}}"
         }
-        count = collection.count_documents(query)
-        print(f"Número de documentos encontrados para el mes {nombre_mes.capitalize()}: {count}")
-        client.close()
-    return {f"consulta para {nombre_mes.capitalize()}":{count}}
+    }
+    count = collection.count_documents(query)
+
+    return {f"consulta para {nombre_mes.capitalize()}": count}
